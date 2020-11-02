@@ -36,14 +36,14 @@ describe("Some paxico tests", () => {
     });
     // 3
 
-    
-// tests are written to ensure that a function continues to produce what was written to execute, 
-// even after changing a nested function or a parent function.
 
-// if it is necessary to test a login form, 
-// the ideal would be to use integration test with the function that sends the data to API to validate the possible returns.
+    // tests are written to ensure that a function continues to produce what was written to execute, 
+    // even after changing a nested function or a parent function.
 
-// is also an option, remount the component with the enzyme technologie, 
-// to simulate a change event in the input and validate the value with the state variable 
-// that receives that value and is consumed by the function it sends to API.
+    // if it is necessary to test a login form, 
+    // the ideal would be to use async test with the function that sends the data to API to validate the possible returns.
+
+    // is also an option, remount the component with the enzyme technologie, 
+    // to simulate a change event in the input and validate the value with the state variable 
+    // that receives that value and is consumed by the function it sends to API.
 });
