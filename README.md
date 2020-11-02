@@ -10,4 +10,4 @@
 
 - To run jest and execute all project tests
 
-- The result of these tests will be available in the vsCode terminal.
+- The result of these tests will be available in the terminal you are using.
