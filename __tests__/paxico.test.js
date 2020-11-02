@@ -46,4 +46,18 @@ describe("Some paxico tests", () => {
     // is also an option, remount the component with the enzyme technologie, 
     // to simulate a change event in the input and validate the value with the state variable 
     // that receives that value and is consumed by the function it sends to API.
+
+    // something like:
+    // OBS: that is a mocked return
+
+    test("it should return logged true if that user exists in DB", () => {
+        expect(functionObj.formValueSender({ 'validated': true })).toEqual({ 'isLoggedIn': true });
+    });
+
+    // where formValueSender function prop, is the component state variable was changed by input change event
+    // and the response ({ 'isLoggedIn': true }) is a mocked response.
+
+    test("it should return logged false if that user don't exists in DB", () => {
+        expect(functionObj.formValueSender({ 'validated': false })).toEqual({ 'isLoggedIn': false });
+    });
 });

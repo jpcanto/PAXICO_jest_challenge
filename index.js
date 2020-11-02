@@ -20,7 +20,13 @@ const functionObj = {
             last_name: "Ballmer",
             email: "lucyb56@gmail.com"
         }
-    ]
+    ],
+
+    formValueSender: (obj) => {
+        return {
+            isLoggedIn: obj.validated ? true : false,
+        }
+    }
 }
 
 module.exports = functionObj;
